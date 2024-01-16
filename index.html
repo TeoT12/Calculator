@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Poppins:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/538b042d3c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="calculator">
+        <div class="status">
+          <p class="time">12:32</p>
+          <div>
+            <i class="fa-solid fa-signal"></i>
+            <i class="fa-solid fa-wifi"></i>
+            <i class="fa-solid fa-battery-three-quarters"></i>
+          </div>
+        </div>
+
+        <input placeholder="0" class="display" readonly>
+        <div>
+          <button onclick="clearDisplay()" class="clear gray">AC</button>
+          <button onclick="showDisplay('+/-')" class="negative gray">+/-</button>
+          <button onclick="showDisplay('%')" class="percent gray" >%</button>
+          <button onclick="showDisplay('/')" class="gamboge"  >÷</button>
+        </div>
+        <div>
+          <button onclick="showDisplay('7')" class="number liver">7</button>
+          <button onclick="showDisplay('8')" class="number liver">8</button>
+          <button onclick="showDisplay('9')" class="number liver">9</button>
+          <button onclick="showDisplay('*')" class="operator gamboge">x</button>
+        </div>
+        <div>
+          <button onclick="showDisplay('4')" class="number liver">4</button>
+          <button onclick="showDisplay('5')" class=" number liver">5</button>
+          <button onclick="showDisplay('6')" class="number liver">6</button>
+          <button onclick="showDisplay('-')" class="operator gamboge">-</button>
+        </div>
+        <div>
+          <button onclick="showDisplay('1')" class="number liver">1</button>
+          <button onclick="showDisplay('2')" class="number liver">2</button>
+          <button onclick="showDisplay('3')" class="number liver">3</button>
+          <button onclick="showDisplay('+')" class="operator gamboge">+</button>
+        </div>
+        <div>
+          <button onclick="showDisplay('0')" class="number zero liver">0</button>
+          <button onclick="showDisplay(',')" class="comma liver">,</button>
+          <button onclick="calculate('=')" class="equals liver">=</button>
+        </div>
+        <div class="line"></div>
+      </div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
